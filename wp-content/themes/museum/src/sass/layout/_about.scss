@@ -1,0 +1,51 @@
+#about {
+  padding: 35px 0;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 110px 0;
+  }
+
+  .about-img {
+    position: relative;
+    padding-top: 300px;
+    @extend %img;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding-top: 400px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      padding-top: 500px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -100px;
+      bottom: 80px;
+      width: 185px;
+      background: rgba($primary, .5);
+      z-index: -2;
+      display: none;
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        display: block;
+      }
+    }
+  }
+
+  .about-item {
+    margin-top: 50px;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      margin-top: 120px;
+      padding-left: 30px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding-left: 60px;
+    }
+  }
+}
+

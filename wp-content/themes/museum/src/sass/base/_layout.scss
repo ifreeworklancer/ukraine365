@@ -1,0 +1,56 @@
+.social-list {
+  display: flex;
+
+  li {
+    margin-right: 25px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      svg {
+        fill: #fff;
+        transition: .5s;
+      }
+
+      &:hover {
+
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+  }
+
+  &--white {
+
+    li {
+
+      a {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &--gray {
+
+    li {
+
+      a {
+        svg {
+          fill: #888;
+        }
+      }
+    }
+  }
+}
+
+.data-in-article {
+  font-size: .875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #888;
+}
